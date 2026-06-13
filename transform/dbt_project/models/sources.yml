@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: Raw ingested tables written by ingestion scripts
+    tables:
+      - name: bronze_matches
+        description: Historical World Cup match results 1930-2022
+        columns:
+          - name: home_team_name
+            tests: [not_null]
+      - name: bronze_cups
+        description: World Cup editions summary (winner, host, attendance)
+        columns:
+          - name: winner
+            tests: [not_null]
+      - name: bronze_players
+        description: Historical World Cup player events
+      - name: bronze_squads
+        description: FBref squad stats scraped per national team
+      - name: bronze_market_value
+        description: Transfermarkt player market values
+      - name: bronze_countries
+        description: Country list with ISO codes and 2026 qualification flag

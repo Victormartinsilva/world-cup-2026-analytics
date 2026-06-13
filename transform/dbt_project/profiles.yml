@@ -1,0 +1,7 @@
+world_cup_2026:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../../data/world_cup.duckdb"
+      threads: 4

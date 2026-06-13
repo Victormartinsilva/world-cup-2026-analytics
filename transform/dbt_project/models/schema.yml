@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_matches
+    description: Cleaned match results with winner derived column
+    columns:
+      - name: edition_year
+        tests: [not_null]
+      - name: home_team
+        tests: [not_null]
+      - name: away_team
+        tests: [not_null]
+
+  - name: stg_nations
+    description: Aggregated all-time stats per nation
+    columns:
+      - name: nation
+        tests: [not_null, unique]
+
+  - name: stg_players
+    description: Player stats joined with market value
+    columns:
+      - name: player_name
+        tests: [not_null]
+
+  - name: mart_nations_performance
+    description: Final nation mart with titles and 2026 qualification
+    columns:
+      - name: nation
+        tests: [not_null, unique]
+
+  - name: mart_brazil_deep
+    description: Brazil per-edition breakdown
+    columns:
+      - name: edition_year
+        tests: [not_null, unique]
+
+  - name: mart_players_profile
+    description: Player profiles for dashboard visualization
+    columns:
+      - name: player_name
+        tests: [not_null]

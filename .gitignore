@@ -1,0 +1,28 @@
+# Data files (never commit raw or processed data)
+data/raw/
+data/silver/
+data/gold/
+*.duckdb
+*.duckdb.wal
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+.coverage
+htmlcov/
+
+# dbt
+transform/dbt_project/target/
+transform/dbt_project/logs/
+transform/dbt_project/.user.yml
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
