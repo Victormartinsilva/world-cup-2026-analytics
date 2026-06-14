@@ -14,7 +14,27 @@ models:
   world_cup_2026:
     silver:
       +materialized: table
-      +schema: silver
     gold:
       +materialized: table
-      +schema: gold
+
+seeds:
+  world_cup_2026:
+    bronze_squads:
+      +column_types:
+        age: varchar
+        mp: integer
+        starts: integer
+        min: integer
+        "90s": float
+        gls: float
+        ast: float
+        pk: integer
+        pkatt: integer
+        crdy: integer
+        crdr: integer
+        xg: float
+        xag: float
+    bronze_market_value:
+      +column_types:
+        age: integer
+        market_value_eur_m: float

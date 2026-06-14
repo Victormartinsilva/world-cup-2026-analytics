@@ -1,24 +1,27 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import json
 import streamlit as st
 import folium
 from streamlit_folium import st_folium
 import duckdb
-from pathlib import Path
+from style import (
+    inject_css, page_header, confederation_legend_html,
+    add_flag_column, GREEN, YELLOW,
+)
 
 st.set_page_config(page_title="Mapa das Nações", layout="wide")
-st.title("🗺️ Nações Participantes — Copa 2026")
+inject_css()
+page_header(
+    "🗺️ Nações Participantes — Copa 2026",
+    "48 seleções classificadas. Explore o mapa e a tabela de desempenho histórico.",
+)
 
-DB_PATH = Path("data/world_cup.duckdb")
+DB_PATH  = Path("data/world_cup.duckdb")
 GEO_PATH = Path("data/raw/geo/qualified_nations.geojson")
-
-CONFEDERATION_COLORS = {
-    "CONMEBOL": "#2ecc71",
-    "UEFA": "#3498db",
-    "CAF": "#e74c3c",
-    "AFC": "#f39c12",
-    "CONCACAF": "#9b59b6",
-    "OFC": "#1abc9c",
-}
 
 
 @st.cache_data
@@ -39,29 +42,56 @@ try:
     df = load_nations()
     geojson = load_geojson()
 
-    m = folium.Map(location=[20, 0], zoom_start=2, tiles="CartoDB positron")
+    m = folium.Map(
+        location=[20, 0],
+        zoom_start=2,
+        tiles="CartoDB dark_matter",
+    )
 
     folium.GeoJson(
         geojson,
         name="Nações 2026",
-        tooltip=folium.GeoJsonTooltip(fields=["ADMIN"], aliases=["País:"]),
+        tooltip=folium.GeoJsonTooltip(fields=["name"], aliases=["País:"]),
         style_function=lambda _: {
-            "fillColor": "#f39c12",
-            "color": "white",
-            "weight": 1,
-            "fillOpacity": 0.7,
+            "fillColor": GREEN,
+            "color": YELLOW,
+            "weight": 1.2,
+            "fillOpacity": 0.65,
+        },
+        highlight_function=lambda _: {
+            "fillColor": YELLOW,
+            "color": "#FFFFFF",
+            "weight": 2,
+            "fillOpacity": 0.85,
         },
     ).add_to(m)
 
-    st_folium(m, width=1200, height=550)
+    st_folium(m, width=None, height=520, returned_objects=[])
 
-    st.subheader("Tabela — Desempenho histórico das 48 nações")
-    st.dataframe(
+    st.markdown(confederation_legend_html(), unsafe_allow_html=True)
+
+    st.markdown("### Tabela — Desempenho histórico das 48 nações")
+    table_df = add_flag_column(
         df[["nation", "editions_played", "wins", "draws", "losses",
             "total_goals_for", "world_cup_titles", "win_pct"]].sort_values(
             "world_cup_titles", ascending=False
-        ),
+        )
+    )
+    st.dataframe(
+        table_df,
+        column_config={
+            "flag_url": st.column_config.ImageColumn("🏳️", width="small"),
+            "nation":           st.column_config.TextColumn("Nação"),
+            "editions_played":  st.column_config.NumberColumn("Edições"),
+            "wins":             st.column_config.NumberColumn("Vitórias"),
+            "draws":            st.column_config.NumberColumn("Empates"),
+            "losses":           st.column_config.NumberColumn("Derrotas"),
+            "total_goals_for":  st.column_config.NumberColumn("Gols pró"),
+            "world_cup_titles": st.column_config.NumberColumn("Títulos"),
+            "win_pct":          st.column_config.NumberColumn("% vitórias", format="%.1f%%"),
+        },
         use_container_width=True,
+        hide_index=True,
     )
 
 except Exception as e:

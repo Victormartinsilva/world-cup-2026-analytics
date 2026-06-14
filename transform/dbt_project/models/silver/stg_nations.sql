@@ -18,7 +18,7 @@ nation_stats AS (
         COUNT(*)                                          AS total_matches,
         SUM(CASE WHEN winner = team THEN 1 ELSE 0 END)   AS wins,
         SUM(CASE WHEN winner = 'Draw' THEN 1 ELSE 0 END) AS draws,
-        SUM(CASE WHEN winner != team AND winner != 'Draw' THEN 1 ELSE 0 END) AS losses,
+        SUM(CASE WHEN winner IS NOT NULL AND winner != team AND winner != 'Draw' THEN 1 ELSE 0 END) AS losses,
         SUM(goals_for)                                    AS total_goals_for,
         SUM(goals_against)                                AS total_goals_against,
         MIN(edition_year)                                 AS first_edition,

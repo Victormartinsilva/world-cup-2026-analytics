@@ -16,15 +16,17 @@ GEOJSON_URL = (
 )
 
 # 48 qualified nations for 2026 (CONMEBOL 6 + UEFA 16 + CAF 9 + AFC 8 + CONCACAF 6 + OFC 1 + hosts)
+# Names must match the 'name' property in the Natural Earth GeoJSON.
+# England and Scotland qualify as separate FIFA teams but share "United Kingdom" in GeoJSON.
 QUALIFIED_NATIONS = {
     # Hosts (auto-qualified)
     "United States of America", "Canada", "Mexico",
     # CONMEBOL
     "Argentina", "Brazil", "Colombia", "Uruguay", "Ecuador", "Venezuela",
-    # UEFA (indicative — final spots TBD)
-    "France", "Germany", "Spain", "England", "Portugal", "Netherlands",
+    # UEFA
+    "France", "Germany", "Spain", "United Kingdom", "Portugal", "Netherlands",
     "Italy", "Belgium", "Austria", "Denmark", "Switzerland", "Croatia",
-    "Poland", "Serbia", "Scotland", "Türkiye",
+    "Poland", "Republic of Serbia", "Turkey",
     # CAF
     "Morocco", "Senegal", "Egypt", "Nigeria", "Cameroon",
     "South Africa", "Ghana", "Ivory Coast", "Algeria",
@@ -57,8 +59,8 @@ def main():
     records = []
     for feature in geojson["features"]:
         props = feature["properties"]
-        name = props.get("ADMIN") or props.get("name") or ""
-        iso = props.get("ISO_A3", "")
+        name = props.get("name") or ""
+        iso = props.get("ISO3166-1-Alpha-3", "")
         qualified = name in QUALIFIED_NATIONS
         records.append({"country_name": name, "iso_a3": iso, "qualified_2026": qualified})
 
@@ -67,7 +69,7 @@ def main():
 
     filtered_features = [
         f for f in geojson["features"]
-        if (f["properties"].get("ADMIN") or f["properties"].get("name", "")) in QUALIFIED_NATIONS
+        if f["properties"].get("name", "") in QUALIFIED_NATIONS
     ]
     filtered_geo = {"type": "FeatureCollection", "features": filtered_features}
     qualified_path.write_text(json.dumps(filtered_geo), encoding="utf-8")

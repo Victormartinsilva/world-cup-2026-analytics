@@ -26,3 +26,6 @@ transform/dbt_project/.user.yml
 # OS
 .DS_Store
 Thumbs.db
+
+# IDE
+.vscode/

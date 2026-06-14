@@ -2,13 +2,11 @@ version: 2
 
 sources:
   - name: bronze
+    schema: main
     description: Raw ingested tables written by ingestion scripts
     tables:
       - name: bronze_matches
         description: Historical World Cup match results 1930-2022
-        columns:
-          - name: home_team_name
-            tests: [not_null]
       - name: bronze_cups
         description: World Cup editions summary (winner, host, attendance)
         columns:

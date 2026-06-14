@@ -9,13 +9,13 @@ market AS (
 
 SELECT
     s.nation,
-    s.player                                  AS player_name,
-    s.pos                                     AS position,
-    CAST(s.age AS INTEGER)                    AS age,
-    CAST(NULLIF(s.mp, '') AS INTEGER)         AS matches_played,
-    CAST(NULLIF(s.gls, '') AS FLOAT)          AS goals,
-    CAST(NULLIF(s.ast, '') AS FLOAT)          AS assists,
-    CAST(NULLIF(s."90s", '') AS FLOAT)        AS minutes_90s,
+    s.player                                                              AS player_name,
+    s.pos                                                                 AS position,
+    TRY_CAST(SPLIT_PART(CAST(s.age AS VARCHAR), '-', 1) AS INTEGER)      AS age,
+    TRY_CAST(s.mp AS INTEGER)                                             AS matches_played,
+    TRY_CAST(s.gls AS FLOAT)                                              AS goals,
+    TRY_CAST(s.ast AS FLOAT)                                              AS assists,
+    TRY_CAST(s."90s" AS FLOAT)                                            AS minutes_90s,
     m.market_value_eur_m
 FROM squads s
 LEFT JOIN market m

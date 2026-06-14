@@ -37,6 +37,10 @@ def scrape_squad(nation: str, url: str) -> pd.DataFrame:
 
     df = pd.read_html(str(table))[0]
     df.columns = ["_".join(str(c).strip().lower().split()) for c in df.columns.droplevel(0)]
+    # FBref includes a 'nation' column for the player's nationality — rename it to avoid
+    # collision with the team-level 'nation' column we're about to insert.
+    if "nation" in df.columns:
+        df.rename(columns={"nation": "player_nationality"}, inplace=True)
     df.insert(0, "nation", nation)
     return df
 
