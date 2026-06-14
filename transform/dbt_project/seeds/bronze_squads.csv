@@ -1,0 +1,98 @@
+nation,player,player_nationality,pos,age,mp,starts,min,90s,gls,ast,pk,pkatt,crdy,crdr,xg,xag
+Brazil,Alisson,BRA,GK,32-150,38,38,3420,38.0,0,0,0,0,1,0,0.0,0.0
+Brazil,Éderson,BRA,GK,31-080,10,10,900,10.0,0,0,0,0,0,0,0.0,0.0
+Brazil,Weverton,BRA,GK,37-040,5,5,450,5.0,0,0,0,0,0,0,0.0,0.0
+Brazil,Danilo,BRA,RB,33-120,22,20,1780,19.8,1,2,0,0,3,0,0.5,1.2
+Brazil,Éder Militão,BRA,CB,27-200,28,28,2520,28.0,2,1,0,0,4,0,1.0,0.5
+Brazil,Marquinhos,BRA,CB,31-060,34,34,3060,34.0,3,1,0,0,2,0,1.5,0.8
+Brazil,Gabriel Magalhães,BRA,CB,27-050,38,38,3420,38.0,5,2,0,0,5,0,3.2,1.0
+Brazil,Alex Sandro,BRA,LB,33-270,15,12,1080,12.0,0,1,0,0,2,0,0.2,0.6
+Brazil,Vanderson,BRA,RB,23-180,30,28,2460,27.3,1,4,0,0,3,0,0.8,2.5
+Brazil,Lucas Paquetá,BRA,MF,27-100,32,30,2650,29.4,8,10,0,0,5,1,6.0,7.5
+Brazil,Casemiro,BRA,MF,33-010,28,25,2200,24.4,3,2,0,0,8,1,2.0,1.5
+Brazil,Bruno Guimarães,BRA,MF,27-020,36,35,3100,34.4,7,8,0,0,4,0,5.5,6.0
+Brazil,Gerson,BRA,MF,27-300,30,28,2460,27.3,5,6,0,0,6,0,4.0,4.5
+Brazil,Andreas Pereira,BRA,MF,29-080,32,20,1800,20.0,4,5,0,0,3,0,3.0,3.5
+Brazil,Rodrygo,BRA,FW,24-150,38,34,2980,33.1,15,10,2,2,2,0,13.0,8.5
+Brazil,Vinícius Jr,BRA,FW,24-250,36,36,3210,35.7,24,11,3,4,4,0,20.5,9.0
+Brazil,Raphinha,BRA,FW,28-090,38,36,3150,35.0,21,16,5,6,3,0,18.0,12.0
+Brazil,Endrick,BRA,FW,18-150,25,15,1250,13.9,8,3,1,1,1,0,7.0,2.5
+Brazil,Gabriel Martinelli,BRA,FW,23-200,36,32,2800,31.1,14,9,0,0,2,0,12.0,7.0
+Brazil,Gabriel (Gabigol),BRA,FW,28-050,30,28,2450,27.2,18,7,3,4,4,0,15.0,5.5
+Argentina,Emiliano Martínez,ARG,GK,32-100,38,38,3420,38.0,0,0,0,0,1,0,0.0,0.0
+Argentina,Nahuel Molina,ARG,RB,27-060,30,28,2480,27.6,3,5,0,0,4,0,2.0,3.5
+Argentina,Cristian Romero,ARG,CB,26-200,32,32,2880,32.0,4,1,0,0,7,1,2.5,0.8
+Argentina,Lisandro Martínez,ARG,CB,27-150,28,28,2520,28.0,3,1,0,0,5,0,2.0,0.5
+Argentina,Nicolás Tagliafico,ARG,LB,32-080,26,22,1950,21.7,1,3,0,0,3,0,0.5,2.0
+Argentina,Rodrigo De Paul,ARG,MF,31-040,34,32,2820,31.3,5,7,0,0,6,0,4.0,5.5
+Argentina,Leandro Paredes,ARG,MF,31-100,28,24,2100,23.3,2,3,0,0,5,0,1.5,2.5
+Argentina,Enzo Fernández,ARG,MF,24-080,32,30,2660,29.6,6,9,0,0,4,0,5.0,7.0
+Argentina,Alexis Mac Allister,ARG,MF,26-050,36,34,3020,33.6,8,10,0,0,3,0,6.5,8.0
+Argentina,Lionel Messi,ARG,FW,38-010,26,24,2050,22.8,18,20,5,6,1,0,16.0,18.0
+Argentina,Lautaro Martínez,ARG,FW,27-180,36,34,2980,33.1,26,9,4,5,4,0,22.0,7.0
+Argentina,Julián Álvarez,ARG,FW,25-050,36,28,2420,26.9,20,12,2,3,2,0,17.0,9.5
+Argentina,Paulo Dybala,ARG,FW,32-000,24,18,1560,17.3,10,8,1,1,2,0,9.0,6.5
+Argentina,Nicolás González,ARG,FW,27-100,28,22,1900,21.1,8,5,0,0,3,0,7.0,3.5
+France,Mike Maignan,FRA,GK,29-180,38,38,3420,38.0,0,0,0,0,2,0,0.0,0.0
+France,Benjamin Pavard,FRA,CB,29-050,30,28,2500,27.8,2,3,0,0,5,0,1.5,2.0
+France,Dayot Upamecano,FRA,CB,26-150,30,30,2700,30.0,2,0,0,0,6,0,1.0,0.3
+France,William Saliba,FRA,CB,24-100,38,38,3420,38.0,3,1,0,0,3,0,1.5,0.5
+France,Theo Hernández,FRA,LB,27-200,34,32,2820,31.3,6,8,0,0,5,0,4.0,6.0
+France,N'Golo Kanté,FRA,MF,34-050,26,22,1950,21.7,2,3,0,0,4,0,1.5,2.5
+France,Aurélien Tchouaméni,FRA,MF,25-120,30,28,2480,27.6,4,3,0,0,6,0,3.0,2.5
+France,Antoine Griezmann,FRA,MF,34-010,34,30,2650,29.4,12,14,2,2,3,0,10.0,11.5
+France,Adrien Rabiot,FRA,MF,30-050,30,26,2280,25.3,5,4,0,0,5,0,4.0,3.0
+France,Kylian Mbappé,FRA,FW,26-150,36,36,3200,35.6,31,12,5,6,2,0,27.0,10.0
+France,Ousmane Dembélé,FRA,FW,28-080,34,30,2600,28.9,16,18,0,0,3,0,13.0,15.0
+France,Marcus Thuram,FRA,FW,27-200,34,30,2620,29.1,18,10,0,0,3,0,14.0,8.0
+France,Randal Kolo Muani,FRA,FW,26-100,28,22,1880,20.9,10,7,0,0,2,0,8.5,5.5
+Germany,Manuel Neuer,GER,GK,39-100,30,30,2700,30.0,0,0,0,0,1,0,0.0,0.0
+Germany,Joshua Kimmich,GER,MF,30-050,34,32,2820,31.3,5,11,0,0,5,0,4.0,9.0
+Germany,Antonio Rüdiger,GER,CB,32-100,30,30,2700,30.0,3,1,0,0,6,0,1.5,0.5
+Germany,Niklas Süle,GER,CB,30-200,25,22,1960,21.8,1,1,0,0,4,0,0.5,0.8
+Germany,David Raum,GER,LB,27-050,32,28,2450,27.2,2,8,0,0,4,0,1.5,6.5
+Germany,Leroy Sané,GER,FW,29-150,30,26,2280,25.3,12,10,0,0,3,0,10.0,8.5
+Germany,Jamal Musiala,GER,MF,22-080,32,30,2620,29.1,18,15,0,0,2,0,14.0,12.0
+Germany,Florian Wirtz,GER,MF,22-050,34,32,2820,31.3,20,18,1,1,2,0,16.0,15.0
+Germany,Kai Havertz,GER,FW,26-100,36,32,2780,30.9,15,9,2,3,3,0,12.5,7.5
+Germany,Thomas Müller,GER,FW,35-200,25,18,1580,17.6,6,9,0,0,2,0,5.0,8.0
+Germany,Serge Gnabry,GER,FW,30-050,26,20,1750,19.4,9,7,0,0,2,0,7.5,5.5
+Germany,Niclas Füllkrug,GER,FW,32-100,28,22,1900,21.1,14,4,2,3,2,0,11.5,3.0
+England,Jordan Pickford,ENG,GK,31-050,38,38,3420,38.0,0,0,0,0,1,0,0.0,0.0
+England,Kyle Walker,ENG,RB,35-100,30,28,2480,27.6,1,3,0,0,3,0,0.5,2.0
+England,John Stones,ENG,CB,31-050,25,24,2140,23.8,2,1,0,0,3,0,1.0,0.8
+England,Harry Maguire,ENG,CB,32-100,20,18,1600,17.8,2,0,0,0,4,0,1.0,0.3
+England,Luke Shaw,ENG,LB,30-200,18,16,1420,15.8,0,2,0,0,2,0,0.2,1.5
+England,Declan Rice,ENG,MF,26-080,36,36,3200,35.6,8,10,0,0,5,0,6.5,8.0
+England,Jude Bellingham,ENG,MF,22-050,34,34,3020,33.6,22,14,2,3,3,0,18.0,11.5
+England,Phil Foden,ENG,MF,25-100,36,32,2780,30.9,19,14,0,0,2,0,15.5,11.0
+England,Bukayo Saka,ENG,FW,23-200,36,34,2980,33.1,18,16,3,4,3,0,15.0,13.0
+England,Harry Kane,ENG,FW,32-050,34,34,3020,33.6,36,14,5,6,4,0,30.0,11.5
+England,Marcus Rashford,ENG,FW,28-100,25,18,1550,17.2,8,5,0,0,2,0,7.0,4.0
+England,Cole Palmer,ENG,FW,23-100,34,30,2640,29.3,22,12,4,5,2,0,18.0,10.0
+Spain,David Raya,ESP,GK,30-050,38,38,3420,38.0,0,0,0,0,0,0,0.0,0.0
+Spain,Dani Carvajal,ESP,RB,33-150,30,28,2480,27.6,2,5,0,0,4,0,1.5,3.5
+Spain,Aymeric Laporte,ESP,CB,31-050,28,26,2320,25.8,2,1,0,0,4,0,1.0,0.5
+Spain,Robin Le Normand,ESP,CB,28-100,30,28,2480,27.6,2,1,0,0,3,0,1.0,0.5
+Spain,Marc Cucurella,ESP,LB,26-200,34,30,2640,29.3,1,5,0,0,5,0,0.8,4.0
+Spain,Rodri,ESP,MF,29-050,36,34,3020,33.6,8,10,1,1,5,0,6.5,8.5
+Spain,Pedri,ESP,MF,23-100,30,28,2460,27.3,7,10,0,0,2,0,5.5,8.0
+Spain,Gavi,ESP,MF,21-050,25,22,1930,21.4,4,6,0,0,6,1,3.0,5.0
+Spain,Fabian Ruiz,ESP,MF,28-200,32,28,2460,27.3,6,7,0,0,3,0,5.0,5.5
+Spain,Lamine Yamal,ESP,FW,18-050,38,36,3150,35.0,20,20,0,0,2,0,16.0,16.0
+Spain,Nico Williams,ESP,FW,22-100,36,32,2800,31.1,16,14,0,0,3,0,13.0,11.5
+Spain,Álvaro Morata,ESP,FW,32-150,28,22,1900,21.1,12,5,1,2,3,0,10.0,4.0
+Spain,Dani Olmo,ESP,FW,27-080,30,26,2280,25.3,10,9,0,0,2,0,8.5,7.5
+Portugal,Diogo Costa,POR,GK,25-150,38,38,3420,38.0,0,0,0,0,1,0,0.0,0.0
+Portugal,João Cancelo,POR,RB,31-100,30,28,2460,27.3,3,8,0,0,4,0,2.0,6.0
+Portugal,Rúben Dias,POR,CB,28-050,36,36,3200,35.6,4,2,0,0,3,0,2.0,1.5
+Portugal,António Silva,POR,CB,22-200,28,26,2320,25.8,2,1,0,0,3,0,1.0,0.5
+Portugal,Nuno Mendes,POR,LB,23-100,30,28,2460,27.3,2,6,0,0,3,0,1.5,5.0
+Portugal,João Palhinha,POR,MF,29-050,34,32,2820,31.3,3,2,0,0,8,1,2.0,1.5
+Portugal,Bruno Fernandes,POR,MF,31-100,36,34,2980,33.1,14,16,3,4,5,0,12.0,13.0
+Portugal,Vitinha,POR,MF,25-150,34,30,2640,29.3,6,8,0,0,2,0,5.0,6.5
+Portugal,Bernardo Silva,POR,MF,30-050,34,30,2620,29.1,10,12,0,0,2,0,8.5,10.0
+Portugal,Cristiano Ronaldo,POR,FW,40-150,30,28,2460,27.3,25,6,8,9,2,0,18.0,5.0
+Portugal,Rafael Leão,POR,FW,26-050,32,28,2450,27.2,16,12,0,0,3,0,13.0,9.5
+Portugal,Pedro Neto,POR,FW,25-150,30,24,2080,23.1,8,10,0,0,2,0,7.0,8.5
+Portugal,Gonçalo Ramos,POR,FW,24-100,28,22,1900,21.1,14,5,2,3,2,0,12.0,4.0

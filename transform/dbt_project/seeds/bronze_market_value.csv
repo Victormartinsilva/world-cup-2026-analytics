@@ -1,0 +1,98 @@
+nation,player_name,position,age,market_value_eur_m
+Brazil,Vinícius Jr,LW,24,200.0
+Brazil,Rodrygo,RW,24,100.0
+Brazil,Endrick,CF,18,60.0
+Brazil,Bruno Guimarães,CM,27,80.0
+Brazil,Éder Militão,CB,27,70.0
+Brazil,Raphinha,RW,28,75.0
+Brazil,Gabriel Magalhães,CB,27,65.0
+Brazil,Lucas Paquetá,CAM,27,70.0
+Brazil,Gabriel Martinelli,LW,23,75.0
+Brazil,Alisson,GK,32,40.0
+Brazil,Marquinhos,CB,31,35.0
+Brazil,Gabriel (Gabigol),CF,28,18.0
+Brazil,Casemiro,CM,33,20.0
+Brazil,Vanderson,RB,23,25.0
+Brazil,Danilo,RB,33,10.0
+Brazil,Éderson,GK,31,35.0
+Brazil,Gerson,CM,27,22.0
+Brazil,Andreas Pereira,CM,29,15.0
+Brazil,Alex Sandro,LB,33,4.0
+Brazil,Weverton,GK,37,5.0
+Argentina,Lautaro Martínez,CF,27,130.0
+Argentina,Julián Álvarez,CF,25,100.0
+Argentina,Enzo Fernández,CM,24,100.0
+Argentina,Alexis Mac Allister,CM,26,80.0
+Argentina,Cristian Romero,CB,26,80.0
+Argentina,Lionel Messi,RW,38,35.0
+Argentina,Rodrigo De Paul,CM,31,40.0
+Argentina,Lisandro Martínez,CB,27,65.0
+Argentina,Nahuel Molina,RB,27,30.0
+Argentina,Paulo Dybala,AM,32,25.0
+Argentina,Nicolás González,LW,27,30.0
+Argentina,Emiliano Martínez,GK,32,35.0
+Argentina,Leandro Paredes,CM,31,15.0
+Argentina,Nicolás Tagliafico,LB,32,10.0
+France,Kylian Mbappé,CF,26,200.0
+France,Ousmane Dembélé,RW,28,100.0
+France,William Saliba,CB,24,90.0
+France,Marcus Thuram,CF,27,80.0
+France,Aurélien Tchouaméni,CM,25,80.0
+France,Mike Maignan,GK,29,65.0
+France,Theo Hernández,LB,27,65.0
+France,Antoine Griezmann,AM,34,25.0
+France,Dayot Upamecano,CB,26,60.0
+France,Randal Kolo Muani,CF,26,55.0
+France,N'Golo Kanté,CM,34,15.0
+France,Benjamin Pavard,CB,29,30.0
+France,Adrien Rabiot,CM,30,18.0
+Germany,Jamal Musiala,AM,22,150.0
+Germany,Florian Wirtz,AM,22,150.0
+Germany,Joshua Kimmich,RB,30,70.0
+Germany,Kai Havertz,CF,26,65.0
+Germany,Antonio Rüdiger,CB,32,35.0
+Germany,Leroy Sané,RW,29,45.0
+Germany,David Raum,LB,27,35.0
+Germany,Niclas Füllkrug,CF,32,28.0
+Germany,Serge Gnabry,RW,30,25.0
+Germany,Niklas Süle,CB,30,20.0
+Germany,Thomas Müller,AM,35,8.0
+Germany,Manuel Neuer,GK,39,5.0
+England,Jude Bellingham,CM,22,180.0
+England,Bukayo Saka,RW,23,150.0
+England,Cole Palmer,AM,23,120.0
+England,Harry Kane,CF,32,100.0
+England,Phil Foden,AM,25,110.0
+England,Declan Rice,CM,26,100.0
+England,Jordan Pickford,GK,31,30.0
+England,Marcus Rashford,LW,28,55.0
+England,John Stones,CB,31,40.0
+England,Kyle Walker,RB,35,12.0
+England,Harry Maguire,CB,32,15.0
+England,Luke Shaw,LB,30,20.0
+Spain,Lamine Yamal,RW,18,150.0
+Spain,Rodri,CM,29,120.0
+Spain,Pedri,CM,23,100.0
+Spain,Nico Williams,LW,22,100.0
+Spain,David Raya,GK,30,50.0
+Spain,Dani Olmo,AM,27,65.0
+Spain,Gavi,CM,21,80.0
+Spain,Marc Cucurella,LB,26,40.0
+Spain,Fabian Ruiz,CM,28,45.0
+Spain,Robin Le Normand,CB,28,35.0
+Spain,Aymeric Laporte,CB,31,25.0
+Spain,Dani Carvajal,RB,33,15.0
+Spain,Álvaro Morata,CF,32,12.0
+Portugal,Cristiano Ronaldo,CF,40,15.0
+Portugal,Bruno Fernandes,AM,31,70.0
+Portugal,Rafael Leão,LW,26,80.0
+Portugal,Rúben Dias,CB,28,70.0
+Portugal,Vitinha,CM,25,60.0
+Portugal,Bernardo Silva,CM,30,60.0
+Portugal,Gonçalo Ramos,CF,24,60.0
+Portugal,Nuno Mendes,LB,23,60.0
+Portugal,Pedro Neto,RW,25,55.0
+Portugal,Diogo Costa,GK,25,40.0
+Portugal,João Cancelo,RB,31,30.0
+Portugal,António Silva,CB,22,45.0
+Portugal,João Palhinha,CM,29,35.0
