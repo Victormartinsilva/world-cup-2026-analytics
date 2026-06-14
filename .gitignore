@@ -1,5 +1,4 @@
-# Data files — binários grandes e banco ficam fora do repo
-*.duckdb
+# Data files — derivados regeneráveis ficam fora do repo
 *.duckdb.wal
 data/silver/
 data/gold/

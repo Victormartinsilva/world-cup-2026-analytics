@@ -15,20 +15,34 @@ _HEADERS = {"User-Agent": "world-cup-2026-analytics/1.0 (portfolio; victoreagri@
 
 # Disambiguation overrides: player name → Wikipedia article slug
 _OVERRIDES: dict[str, str] = {
-    # Brazil
-    "Vinícius Jr":          "Vinícius_Júnior",
-    "Éderson":              "Ederson_Moraes",          # sem acento no slug funciona
-    "Éder Militão":         "Éder_Militão",
+    # Brazil 2026
+    "Vinicius Junior":      "Vinícius_Júnior",
+    "Ederson":              "Ederson_Moraes",
+    "Neymar Junior":        "Neymar",
+    "Raphinha":             "Raphinha",
     "Gabriel Magalhães":    "Gabriel_Magalhães",
-    "Gabriel (Gabigol)":    "Gabriel_Barbosa",
     "Gabriel Martinelli":   "Gabriel_Martinelli",
     "Bruno Guimarães":      "Bruno_Guimarães",
-    "Andreas Pereira":      "Andreas_Pereira",         # sem disambiguation
-    "Gerson":               "Gerson_(footballer,_born_1997)",
-    "Weverton":             "Weverton",
-    "Vanderson":            "Vanderson",
+    "Lucas Paquetá":        "Lucas_Paquetá",
+    "Marquinhos":           "Marquinhos_(footballer)",
     "Danilo":               "Danilo_(footballer,_born_1991)",
+    "Bremer":               "Bremer_(footballer)",
+    "Léo Pereira":          "Léo_Pereira_(footballer)",
+    "Ibañez":               "Roger_Ibañez",
+    "Wesley":               "Wesley_(footballer,_born_2003)",
+    "Douglas Santos":       "Douglas_Santos_(footballer)",
+    "Fabinho":              "Fabinho_(footballer,_born_1993)",
+    "Danilo Santos":        "Danilo_Santos_(footballer)",
+    "Matheus Cunha":        "Matheus_Cunha",
+    "Igor Thiago":          "Igor_Thiago",
+    "Luiz Henrique":        "Luiz_Henrique_(footballer,_born_2001)",
+    "Rayan":                "Rayan_(footballer)",
     "Endrick":              "Endrick",
+    "Weverton":             "Weverton",
+    "Alisson":              "Alisson_Becker",
+    "Casemiro":             "Casemiro",
+    # Legacy entries (removed from squad but kept for other nations)
+    "Gerson":               "Gerson_(footballer,_born_1997)",
     # Argentina
     "Lautaro Martínez":     "Lautaro_Martínez",
     "Julián Álvarez":       "Julián_Álvarez_(footballer)",
@@ -132,9 +146,12 @@ def load_photos(player_names: list[str]) -> dict[str, str]:
         cache[name] = _fetch_wiki_photo(name)
 
     if missing:
-        _CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
-        _CACHE_PATH.write_text(
-            json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        try:
+            _CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+            _CACHE_PATH.write_text(
+                json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+        except OSError:
+            pass  # read-only filesystem (Streamlit Cloud) — cache vive apenas em memória
 
     return {n: cache.get(n, "") for n in player_names}
