@@ -270,9 +270,10 @@ try:
         title=f"Gols e vitórias de {nation_name_pt} por edição"
     )
     layout["yaxis2"] = dict(
-        title="Vitórias", overlaying="y", side="right",
+        title=dict(text="Vitórias", font=dict(color="#F0F0F0")),
+        overlaying="y", side="right",
         gridcolor="#1a3d25", linecolor=GREEN,
-        tickfont=dict(color="#F0F0F0"), titlefont=dict(color="#F0F0F0"),
+        tickfont=dict(color="#F0F0F0"),
     )
     fig.update_layout(**layout, barmode="group", xaxis_title="Edição", yaxis_title="Gols")
     st.plotly_chart(fig, use_container_width=True)
@@ -356,4 +357,4 @@ try:
             st.dataframe(agg, use_container_width=True, hide_index=True)
 
 except Exception as e:
-    st.warning(f"Execute o pipeline primeiro (`make all`). Detalhe: {e}")
+    st.error(f"Não foi possível carregar os dados. Tente recarregar a página. ({type(e).__name__})")

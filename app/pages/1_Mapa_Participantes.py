@@ -510,7 +510,7 @@ try:
             tooltip=folium.Tooltip(tooltip_html, sticky=True),
         ).add_to(m)
 
-    st_folium(m, width=None, height=540, returned_objects=[])
+    st_folium(m, width="100%", height=500, returned_objects=[])
 
     st.markdown(
         '<div style="display:flex;align-items:center;gap:18px;'
@@ -554,5 +554,5 @@ try:
         hide_index=True,
     )
 
-except Exception as e:
-    st.warning(f"Execute o pipeline primeiro (`make all`). Detalhe: {e}")
+except Exception:
+    st.error("Não foi possível carregar os dados do mapa. Tente recarregar a página.")

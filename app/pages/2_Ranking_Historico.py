@@ -181,6 +181,15 @@ try:
             "total_matches":       "Jogos",
         },
     )
+    # Rótulos de texto nas bolhas (apenas quando há ≤ 20 nações para não poluir)
+    if len(scatter_df) <= 20:
+        fig2.update_traces(
+            text=scatter_df["nacao"],
+            textposition="top center",
+            textfont=dict(size=8, color="#cce8d8"),
+            mode="markers+text",
+        )
+
     # Linha diagonal (x = y) como referência de equilíbrio
     max_v = max(scatter_df["total_goals_for"].max(), scatter_df["total_goals_against"].max())
     fig2.add_shape(
@@ -222,5 +231,8 @@ try:
         hide_index=True,
     )
 
-except Exception as e:
-    st.warning(f"Execute o pipeline primeiro (`make all`). Detalhe: {e}")
+except Exception:
+    st.warning(
+        "Os dados ainda não estão disponíveis. "
+        "Certifique-se de que a ingestão e a transformação foram concluídas antes de abrir o painel."
+    )

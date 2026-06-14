@@ -114,7 +114,7 @@ _TEAM_PT: dict[str, str] = {
     "Belgium": "Bélgica",        "Egypt": "Egito",
     "Iran": "Irã",               "New Zealand": "Nova Zelândia",
     "Spain": "Espanha",          "Uruguay": "Uruguai",
-    "Saudi Arabia": "Arábia Sau.","Cape Verde": "Cabo Verde",
+    "Saudi Arabia": "Arábia Saud.","Cape Verde": "Cabo Verde",
     "France": "França",          "Senegal": "Senegal",
     "Iraq": "Iraque",            "Norway": "Noruega",
     "Argentina": "Argentina",    "Algeria": "Argélia",
@@ -592,7 +592,7 @@ try:
     con.close()
     st.markdown(_nations_interactive_grid(nations), unsafe_allow_html=True)
 except Exception:
-    st.info("Execute `make all` para carregar os dados e ver as bandeiras das 48 nações.")
+    st.error("Não foi possível carregar os dados. Tente recarregar a página.")
 
 # ── Explorar elenco ───────────────────────────────────────────────────────────
 st.markdown("---")
