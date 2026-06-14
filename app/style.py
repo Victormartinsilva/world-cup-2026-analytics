@@ -41,20 +41,30 @@ _PLOTLY_BASE: dict = dict(
     paper_bgcolor=DARK_BG,
     plot_bgcolor=DARK_BG,
     font=dict(color="#F0F0F0", family="'Barlow Condensed', 'Inter', sans-serif"),
-    title_font=dict(size=20, color=YELLOW, family="'Barlow Condensed', sans-serif"),
+    # title_font removido: criava objeto title.font sem title.text → Plotly JS
+    # renderizava "undefined" (exibido como "indefinido" em locale PT)
     xaxis=dict(gridcolor="#1a3d25", linecolor=GREEN, zerolinecolor="#1a3d25"),
     yaxis=dict(gridcolor="#1a3d25", linecolor=GREEN, zerolinecolor="#1a3d25"),
     legend=dict(bgcolor=SIDEBAR_BG, bordercolor=GREEN, borderwidth=1,
                 font=dict(color="#F0F0F0")),
-    coloraxis_colorbar=dict(tickfont=dict(color="#F0F0F0"),
-                            title_font=dict(color="#F0F0F0")),
+    coloraxis_colorbar=dict(
+        tickfont=dict(color="#F0F0F0"),
+        title_font=dict(color="#F0F0F0"),
+    ),
     margin=dict(t=60, b=40, l=40, r=40),
 )
 
+_TITLE_FONT = dict(size=20, color=YELLOW, family="'Barlow Condensed', sans-serif")
 
-def plotly_layout() -> dict:
-    """Retorna o dict de layout base para figures Plotly."""
-    return dict(_PLOTLY_BASE)
+
+def plotly_layout(title: str | None = None) -> dict:
+    """Retorna o dict de layout base.
+    Passa ``title`` para gráficos que precisam de título com fonte amarela.
+    """
+    base = dict(_PLOTLY_BASE)
+    if title:
+        base["title"] = dict(text=title, font=_TITLE_FONT)
+    return base
 
 
 # ── CSS global ─────────────────────────────────────────────────────────────────
@@ -164,6 +174,74 @@ def page_header(title: str, subtitle: str = "") -> None:
         </div>""",
         unsafe_allow_html=True,
     )
+
+
+# ── Tradução de nomes de nações: inglês → português ──────────────────────────
+NATION_PT: dict[str, str] = {
+    "Brazil": "Brasil",          "Argentina": "Argentina",
+    "Colombia": "Colômbia",      "Uruguay": "Uruguai",
+    "Ecuador": "Equador",        "Venezuela": "Venezuela",
+    "Chile": "Chile",            "Peru": "Peru",
+    "Paraguay": "Paraguai",      "Bolivia": "Bolívia",
+    "United States": "EUA",      "USA": "EUA",
+    "Mexico": "México",          "Canada": "Canadá",
+    "Costa Rica": "Costa Rica",  "Honduras": "Honduras",
+    "Jamaica": "Jamaica",        "Panama": "Panamá",
+    "El Salvador": "El Salvador","Haiti": "Haiti",
+    "Trinidad and Tobago": "Trinidad e Tobago",
+    "Cuba": "Cuba",              "Curaçao": "Curaçao",
+    "Germany": "Alemanha",       "West Germany": "Alemanha Ocid.",
+    "France": "França",          "Spain": "Espanha",
+    "Italy": "Itália",           "England": "Inglaterra",
+    "Netherlands": "Holanda",    "Holland": "Holanda",
+    "Belgium": "Bélgica",        "Portugal": "Portugal",
+    "Croatia": "Croácia",        "Poland": "Polônia",
+    "Denmark": "Dinamarca",      "Switzerland": "Suíça",
+    "Sweden": "Suécia",          "Norway": "Noruega",
+    "Austria": "Áustria",        "Czech Republic": "República Tcheca",
+    "Czechia": "República Tcheca","Hungary": "Hungria",
+    "Romania": "Romênia",        "Scotland": "Escócia",
+    "Wales": "Gales",            "Turkey": "Turquia",
+    "Türkiye": "Turquia",        "Greece": "Grécia",
+    "Russia": "Rússia",          "Soviet Union": "URSS",
+    "Ukraine": "Ucrânia",        "Slovakia": "Eslováquia",
+    "Slovenia": "Eslovênia",     "Serbia": "Sérvia",
+    "Yugoslavia": "Iugoslávia",  "Bulgaria": "Bulgária",
+    "Bosnia and Herzegovina": "Bósnia e Herzegovina",
+    "Montenegro": "Montenegro",  "Georgia": "Geórgia",
+    "North Macedonia": "Macedônia do Norte",
+    "Albania": "Albânia",        "Kosovo": "Kosovo",
+    "Ireland": "Irlanda",        "Finland": "Finlândia",
+    "Iceland": "Islândia",       "Luxembourg": "Luxemburgo",
+    "Morocco": "Marrocos",       "Senegal": "Senegal",
+    "Nigeria": "Nigéria",        "Egypt": "Egito",
+    "Cameroon": "Camarões",      "Ghana": "Gana",
+    "Ivory Coast": "Costa do Marfim",
+    "Côte d'Ivoire": "Costa do Marfim",
+    "Tunisia": "Tunísia",        "Algeria": "Argélia",
+    "South Africa": "África do Sul",
+    "Mali": "Mali",              "Guinea": "Guiné",
+    "DR Congo": "Congo RD",      "Congo": "Congo",
+    "Cape Verde": "Cabo Verde",  "Burkina Faso": "Burkina Faso",
+    "Zambia": "Zâmbia",          "Angola": "Angola",
+    "Tanzania": "Tanzânia",      "Kenya": "Quênia",
+    "Zimbabwe": "Zimbábue",      "Libya": "Líbia",
+    "Japan": "Japão",            "South Korea": "Coreia do Sul",
+    "Korea Republic": "Coreia do Sul",
+    "Iran": "Irã",               "Saudi Arabia": "Arábia Saudita",
+    "Australia": "Austrália",    "Qatar": "Catar",
+    "Iraq": "Iraque",            "UAE": "Emirados Árabes",
+    "United Arab Emirates": "Emirados Árabes",
+    "China": "China",            "North Korea": "Coreia do Norte",
+    "Indonesia": "Indonésia",    "Uzbekistan": "Uzbequistão",
+    "Jordan": "Jordânia",        "New Zealand": "Nova Zelândia",
+    "Fiji": "Fiji",
+}
+
+
+def nation_pt(name: str) -> str:
+    """Retorna o nome da nação em português (mantém original se não mapeado)."""
+    return NATION_PT.get(name, name)
 
 
 # ── Bandeiras (flagcdn.com) ────────────────────────────────────────────────────

@@ -1,24 +1,30 @@
 nation,player,player_nationality,pos,age,mp,starts,min,90s,gls,ast,pk,pkatt,crdy,crdr,xg,xag
-Brazil,Alisson,BRA,GK,32-150,38,38,3420,38.0,0,0,0,0,1,0,0.0,0.0
-Brazil,Éderson,BRA,GK,31-080,10,10,900,10.0,0,0,0,0,0,0,0.0,0.0
-Brazil,Weverton,BRA,GK,37-040,5,5,450,5.0,0,0,0,0,0,0,0.0,0.0
-Brazil,Danilo,BRA,RB,33-120,22,20,1780,19.8,1,2,0,0,3,0,0.5,1.2
-Brazil,Éder Militão,BRA,CB,27-200,28,28,2520,28.0,2,1,0,0,4,0,1.0,0.5
-Brazil,Marquinhos,BRA,CB,31-060,34,34,3060,34.0,3,1,0,0,2,0,1.5,0.8
-Brazil,Gabriel Magalhães,BRA,CB,27-050,38,38,3420,38.0,5,2,0,0,5,0,3.2,1.0
-Brazil,Alex Sandro,BRA,LB,33-270,15,12,1080,12.0,0,1,0,0,2,0,0.2,0.6
-Brazil,Vanderson,BRA,RB,23-180,30,28,2460,27.3,1,4,0,0,3,0,0.8,2.5
-Brazil,Lucas Paquetá,BRA,MF,27-100,32,30,2650,29.4,8,10,0,0,5,1,6.0,7.5
-Brazil,Casemiro,BRA,MF,33-010,28,25,2200,24.4,3,2,0,0,8,1,2.0,1.5
-Brazil,Bruno Guimarães,BRA,MF,27-020,36,35,3100,34.4,7,8,0,0,4,0,5.5,6.0
-Brazil,Gerson,BRA,MF,27-300,30,28,2460,27.3,5,6,0,0,6,0,4.0,4.5
-Brazil,Andreas Pereira,BRA,MF,29-080,32,20,1800,20.0,4,5,0,0,3,0,3.0,3.5
-Brazil,Rodrygo,BRA,FW,24-150,38,34,2980,33.1,15,10,2,2,2,0,13.0,8.5
-Brazil,Vinícius Jr,BRA,FW,24-250,36,36,3210,35.7,24,11,3,4,4,0,20.5,9.0
-Brazil,Raphinha,BRA,FW,28-090,38,36,3150,35.0,21,16,5,6,3,0,18.0,12.0
-Brazil,Endrick,BRA,FW,18-150,25,15,1250,13.9,8,3,1,1,1,0,7.0,2.5
-Brazil,Gabriel Martinelli,BRA,FW,23-200,36,32,2800,31.1,14,9,0,0,2,0,12.0,7.0
-Brazil,Gabriel (Gabigol),BRA,FW,28-050,30,28,2450,27.2,18,7,3,4,4,0,15.0,5.5
+Brazil,Alisson,BRA,GK,33-150,38,38,3420,38.0,0,0,0,0,1,0,0.0,0.0
+Brazil,Ederson,BRA,GK,32-080,30,30,2700,30.0,0,0,0,0,0,0,0.0,0.0
+Brazil,Weverton,BRA,GK,38-040,5,5,450,5.0,0,0,0,0,0,0,0.0,0.0
+Brazil,Alex Sandro,BRA,LB,34-270,20,16,1440,16.0,1,2,0,0,3,0,0.4,1.2
+Brazil,Bremer,BRA,CB,29-089,22,20,1800,20.0,2,0,0,0,4,0,1.2,0.3
+Brazil,Danilo,BRA,RB,34-120,20,18,1600,17.8,1,1,0,0,2,0,0.4,0.8
+Brazil,Douglas Santos,BRA,LB,30-085,24,22,1950,21.7,1,3,0,0,4,0,0.5,2.0
+Brazil,Gabriel Magalhães,BRA,CB,28-050,36,36,3240,36.0,4,1,0,0,4,0,2.8,0.8
+Brazil,Ibañez,BRA,CB,28-133,25,24,2160,24.0,1,0,0,0,5,0,0.8,0.3
+Brazil,Léo Pereira,BRA,CB,30-032,28,26,2340,26.0,3,1,0,0,5,0,2.0,0.6
+Brazil,Marquinhos,BRA,CB,32-060,30,30,2700,30.0,3,2,0,0,3,0,1.5,0.8
+Brazil,Wesley,BRA,RB,22-200,28,24,2100,23.3,2,4,0,0,3,0,1.2,3.0
+Brazil,Bruno Guimarães,BRA,MF,28-020,34,32,2820,31.3,6,7,0,0,4,0,5.0,5.5
+Brazil,Casemiro,BRA,MF,34-010,26,22,1950,21.7,2,1,0,0,7,1,1.5,1.0
+Brazil,Danilo Santos,BRA,MF,24-150,28,24,2100,23.3,4,5,0,0,5,0,3.0,4.0
+Brazil,Fabinho,BRA,MF,32-233,20,16,1400,15.6,1,1,0,0,4,0,0.8,0.8
+Brazil,Lucas Paquetá,BRA,MF,28-100,30,28,2480,27.6,7,9,0,0,5,1,5.5,7.0
+Brazil,Endrick,BRA,FW,19-150,28,18,1580,17.6,9,4,1,1,2,0,8.0,3.0
+Brazil,Gabriel Martinelli,BRA,FW,24-200,34,30,2620,29.1,13,8,0,0,2,0,11.0,6.5
+Brazil,Igor Thiago,BRA,FW,23-050,26,20,1760,19.6,10,4,1,1,3,0,8.5,3.0
+Brazil,Luiz Henrique,BRA,FW,24-308,25,18,1580,17.6,8,6,0,0,2,0,6.5,4.5
+Brazil,Matheus Cunha,BRA,FW,26-352,32,28,2450,27.2,14,8,2,3,4,0,11.5,6.0
+Brazil,Neymar Junior,BRA,FW,34-129,20,16,1380,15.3,9,7,2,2,3,0,7.5,6.0
+Brazil,Raphinha,BRA,FW,29-090,36,34,2980,33.1,22,17,5,6,3,0,19.0,13.0
+Brazil,Rayan,BRA,FW,18-050,22,14,1240,13.8,5,3,0,0,2,0,4.0,2.5
+Brazil,Vinicius Junior,BRA,FW,25-250,34,34,3020,33.6,26,12,3,4,5,0,22.0,10.0
 Argentina,Emiliano Martínez,ARG,GK,32-100,38,38,3420,38.0,0,0,0,0,1,0,0.0,0.0
 Argentina,Nahuel Molina,ARG,RB,27-060,30,28,2480,27.6,3,5,0,0,4,0,2.0,3.5
 Argentina,Cristian Romero,ARG,CB,26-200,32,32,2880,32.0,4,1,0,0,7,1,2.5,0.8

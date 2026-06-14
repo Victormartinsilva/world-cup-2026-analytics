@@ -1,24 +1,30 @@
 nation,player_name,position,age,market_value_eur_m
-Brazil,Vinícius Jr,LW,24,200.0
-Brazil,Rodrygo,RW,24,100.0
-Brazil,Endrick,CF,18,60.0
-Brazil,Bruno Guimarães,CM,27,80.0
-Brazil,Éder Militão,CB,27,70.0
-Brazil,Raphinha,RW,28,75.0
-Brazil,Gabriel Magalhães,CB,27,65.0
-Brazil,Lucas Paquetá,CAM,27,70.0
-Brazil,Gabriel Martinelli,LW,23,75.0
-Brazil,Alisson,GK,32,40.0
-Brazil,Marquinhos,CB,31,35.0
-Brazil,Gabriel (Gabigol),CF,28,18.0
-Brazil,Casemiro,CM,33,20.0
-Brazil,Vanderson,RB,23,25.0
-Brazil,Danilo,RB,33,10.0
-Brazil,Éderson,GK,31,35.0
-Brazil,Gerson,CM,27,22.0
-Brazil,Andreas Pereira,CM,29,15.0
-Brazil,Alex Sandro,LB,33,4.0
-Brazil,Weverton,GK,37,5.0
+Brazil,Vinicius Junior,LW,25,200.0
+Brazil,Raphinha,RW,29,85.0
+Brazil,Endrick,CF,19,75.0
+Brazil,Bruno Guimarães,CM,28,90.0
+Brazil,Matheus Cunha,CF,26,55.0
+Brazil,Gabriel Magalhães,CB,28,70.0
+Brazil,Lucas Paquetá,CAM,28,65.0
+Brazil,Gabriel Martinelli,LW,24,80.0
+Brazil,Bremer,CB,29,55.0
+Brazil,Wesley,RB,22,30.0
+Brazil,Alisson,GK,33,35.0
+Brazil,Marquinhos,CB,32,30.0
+Brazil,Igor Thiago,CF,23,30.0
+Brazil,Luiz Henrique,LW,24,22.0
+Brazil,Casemiro,CM,34,15.0
+Brazil,Danilo Santos,CM,24,20.0
+Brazil,Ederson,GK,32,20.0
+Brazil,Léo Pereira,CB,30,20.0
+Brazil,Rayan,RW,18,18.0
+Brazil,Ibañez,CB,28,15.0
+Brazil,Danilo,RB,34,8.0
+Brazil,Douglas Santos,LB,30,8.0
+Brazil,Fabinho,CM,32,10.0
+Brazil,Neymar Junior,LW,34,8.0
+Brazil,Alex Sandro,LB,34,3.0
+Brazil,Weverton,GK,38,4.0
 Argentina,Lautaro Martínez,CF,27,130.0
 Argentina,Julián Álvarez,CF,25,100.0
 Argentina,Enzo Fernández,CM,24,100.0
