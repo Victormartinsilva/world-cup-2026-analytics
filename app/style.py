@@ -348,23 +348,6 @@ def nation_flag_url(nation: str, width: int = 40) -> str:
     return flag_url(iso, width) if iso else ""
 
 
-def nation_flag_html(nation: str, width: int = 40) -> str:
-    """Retorna tag <img> HTML da bandeira pelo nome da nação."""
-    url = nation_flag_url(nation, width)
-    if not url:
-        h = int(width * 0.67)
-        return (
-            f'<span style="width:{width}px;height:{h}px;background:#1a3d25;'
-            f'border-radius:2px;display:inline-block;vertical-align:middle"></span>'
-        )
-    h = int(width * 0.67)
-    return (
-        f'<img src="{url}" width="{width}" '
-        f'style="border-radius:2px;object-fit:cover;height:{h}px;'
-        f'vertical-align:middle;box-shadow:0 1px 4px rgba(0,0,0,0.4)">'
-    )
-
-
 def nation_flag_html(nation: str, width: int = 40, style_extra: str = "") -> str:
     """<img> com fallback completo pelo nome da nação."""
     iso = NATION_TO_ISO2.get(nation, "")
@@ -405,7 +388,7 @@ def nations_flag_grid_html(nations: list[str], cols: int = 10) -> str:
     return (
         '<div style="background:#012A1C;padding:1.2rem 1.4rem;border-radius:12px;'
         'border:1px solid rgba(0,156,59,0.3);margin-top:1rem;'
-        f'display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-start">'
+        'display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-start">'
         + "".join(cards) + "</div>"
     )
 

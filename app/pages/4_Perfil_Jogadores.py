@@ -11,8 +11,7 @@ import duckdb
 from style import (
     inject_css, page_header, plotly_layout,
     add_flag_column, nation_flag_html, nation_pt,
-    CHART_PALETTE, POSITION_COLORS, SEQUENTIAL_SCALE,
-    GREEN, YELLOW, BLUE,
+    SEQUENTIAL_SCALE, GREEN, YELLOW,
 )
 from player_photos import load_photos
 
@@ -250,10 +249,10 @@ with tab_cards:
         else:
             tier_color = {"OURO": "#FFD700", "PRATA": "#C0C0C0"}.get(tier_label, GREEN)
             photo_section = (
-                f'<div style="height:130px;background:linear-gradient(160deg,#012A1C,#011a10);'
-                f'display:flex;align-items:center;justify-content:center">'
+                '<div style="height:130px;background:linear-gradient(160deg,#012A1C,#011a10);'
+                'display:flex;align-items:center;justify-content:center">'
                 + _initials_avatar(name, tier_color)
-                + f'</div>'
+                + '</div>'
             )
 
         # Badge
@@ -315,7 +314,7 @@ with tab_cards:
         st.info("Nenhum jogador encontrado para os filtros selecionados.")
     else:
         st.markdown(
-            f'<div style="display:flex;flex-wrap:wrap;gap:0px">'
+            '<div style="display:flex;flex-wrap:wrap;gap:0px">'
             + "".join(
                 _card_html(row, photos.get(row["player_name"], ""))
                 for _, row in sorted_df.iterrows()

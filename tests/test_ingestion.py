@@ -1,5 +1,3 @@
-import pandas as pd
-import pytest
 from ingestion.bronze_market_value import parse_market_value
 
 
