@@ -128,7 +128,6 @@ _TEAM_PT: dict[str, str] = {
     "Poland": "Polônia",         "Denmark": "Dinamarca",
     "Italy": "Itália",           "Serbia": "Sérvia",
     "Nigeria": "Nigéria",        "Mali": "Mali",
-    "Senegal": "Senegal",        "Tunisia": "Tunísia",
     "Indonesia": "Indonésia",    "Venezuela": "Venezuela",
     "Bolivia": "Bolívia",        "Chile": "Chile",
     "Peru": "Peru",              "El Salvador": "El Salvador",
@@ -251,9 +250,9 @@ def match_card_html(m: dict) -> str:
     away_bold = "font-weight:800;" if m["as_"] > m["hs"] else ""
 
     br_badge = (
-        f'<div style="position:absolute;top:0;left:0;right:0;'
-        f'background:linear-gradient(90deg,#009C3B,#FFDF00,#009C3B);'
-        f'height:3px"></div>'
+        '<div style="position:absolute;top:0;left:0;right:0;'
+        'background:linear-gradient(90deg,#009C3B,#FFDF00,#009C3B);'
+        'height:3px"></div>'
         if is_br else ""
     )
 
@@ -332,14 +331,14 @@ def match_card_html(m: dict) -> str:
             f'▶ VER DESTAQUES</a></div>'
             if yt_id else ""
         )
-        + f'</div>'
+        + '</div>'
     )
 
     return (
         f'<div style="background:#012A1C;border-radius:12px;overflow:hidden;'
         f'border:2px solid {border_color};'
         f'box-shadow:0 4px 18px {"rgba(255,223,0,0.12)" if is_br else "rgba(0,0,0,0.4)"}">'
-        + img_section + score_section + f'</div>'
+        + img_section + score_section + '</div>'
     )
 
 
@@ -448,10 +447,10 @@ def _nations_interactive_grid(nations: list[str]) -> str:
         )
 
         badge = (
-            f'<div style="position:absolute;top:-4px;right:-4px;'
-            f'background:#009C3B;border-radius:50%;width:12px;height:12px;'
-            f'border:1.5px solid #0B1A12;display:flex;align-items:center;'
-            f'justify-content:center;font-size:0.45rem;color:#fff">⭐</div>'
+            '<div style="position:absolute;top:-4px;right:-4px;'
+            'background:#009C3B;border-radius:50%;width:12px;height:12px;'
+            'border:1.5px solid #0B1A12;display:flex;align-items:center;'
+            'justify-content:center;font-size:0.45rem;color:#fff">⭐</div>'
             if has_sq else ""
         )
 
