@@ -1,9 +1,8 @@
-# Data files (never commit raw or processed data)
-data/raw/
-data/silver/
-data/gold/
+# Data files — binários grandes e banco ficam fora do repo
 *.duckdb
 *.duckdb.wal
+data/silver/
+data/gold/
 
 # Python
 __pycache__/
